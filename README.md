@@ -6,21 +6,21 @@ Traditional market tools tend to answer *"what happened to this stock?"* NewAngl
 
 ## Current Status
 
-**This project is in Phase 0 (repository foundation). There is no working application yet.**
+**This project is in Phase 1 (data model). There is no working application yet.**
 
 As of now, the repository contains:
 - Project documentation and contribution guidelines
-- Initial architecture documentation describing the *intended* system design
+- Architecture documentation describing the system design, current and intended
+- A tested, migration-backed PostgreSQL schema (`packages/data/`) for companies, listed securities, sources, corporate events, and promoter holding observations — with point-in-time and provenance fields, but no data in it
 
 The repository does **not** yet contain:
-- A database or data model
-- Any data ingestion or connectors to real data sources
+- Any data ingestion or connectors to real data sources — the schema above is empty; nothing populates it yet
 - Any signal-detection, event-study, or analytics logic
 - An API
 - A frontend/UI
 - Any validated research results
 
-**No functionality described elsewhere in this README (or in the long-term vision below) is currently implemented, tested, or backed by real data.** Anything not explicitly listed under "Current Status" should be treated as a future goal, not a present capability.
+**No functionality described elsewhere in this README (or in the long-term vision below) is currently implemented, tested, or backed by real data**, beyond the schema itself described above. Anything not explicitly listed under "Current Status" should be treated as a future goal, not a present capability.
 
 ## Core Idea
 
